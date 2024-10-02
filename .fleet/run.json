@@ -2,11 +2,18 @@
     "configurations": [
         {
             "type": "command",
-            "name": "Run my Swift script",
+            "name": "Run (Ubuntu)",
             "program": "$USER_HOME$/swift-6.0.1-RELEASE-ubuntu22.04/usr/bin/swift",
             "workingDir": "$PROJECT_DIR$",
             "args": ["$FILE$"]
-        }
+        },
+        {
+            "type": "command",
+            "name": "Run (Mac)",
+            "program": "/usr/bin/swift",
+            "workingDir": "$PROJECT_DIR$",
+            "args": ["$FILE$"]
+        },
 
     ]
 }

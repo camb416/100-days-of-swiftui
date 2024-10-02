@@ -2,7 +2,7 @@
 
 I've started doing [Paul Hudson](https://x.com/twostraws)'s [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui). I'd like to improve my RealityKit and Unity/Native iOS interoperability skills to make high-fidelity 3D experiences that live and feel like first-class citizens in the Apple ecosystem.
 
-## Day One: Avoiding Xcode
+# Day One: Avoiding Xcode
 Days one and two are basic data types and printing. Watched the videos on 2x and making my life harder by testing the cross-platform nature of Swift.
 - Installed Jetbrains toolbox on Ubuntu, which required a system update and some effort to install something called FUSE. This borked my video card driver. Cool.
 - Installed Swift 6.0.1, which requires Python and Clang.
@@ -14,3 +14,16 @@ Takeaways:
 - lots of helper methods on basic types
 - emoji support is pretty funny, but shouldn't be in 2024
 - Avoiding Xcode is hard mode, avoiding VSCode is **Hurt Me Plenty**
+
+# Day Two: Compound Types
+
+Days three and four: Arrays, Dictionaries, Sets and Enums. Sets are kind of new to me. Dicts are just named arrays. All of these need single type for key and single type for value. I got a few quiz questions wrong. Paul gets a little sneaky with syntax. Watching videos and background.
+
+- Added a new run configuration to run this on Fleet on Mac. Should just install swift in /usr/bin on Linux to consolidate the run configs.
+- 
+
+Takeaways:
+- use of `case` in enums is weird
+- explains all the things prefixed with `.`
+- Arrays and Dicts are straightforward, but the syntax for Sets is going to trip me up later.
+- Paul likes type inference, but it makes me nervous. I'm tempted to explicitly type and add semicolons like a crazy person
