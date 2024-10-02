@@ -26,6 +26,7 @@ print(paragraph)
 print("---")
 print("Of the \(wordArray.count) words in the paragraph, \(wordSet.count) are unique.")
 print("---")
+
 // Create a dictionary of word counts
 // note the filter, which counts occurrences in the array
 var wordCounts:[String:Int] = [:]
@@ -38,7 +39,7 @@ let sortedWordCounts = wordCounts.sorted(by: {$0.0 < $1.0}).sorted(by: {$0.1 > $
 
 // Print a report of found words
 for w in sortedWordCounts{
-    if(w.value>1){
+    if w.value > 1 {
         print("\(w.key): (\(w.value) ocurrences)")
     }
 }
