@@ -31,13 +31,22 @@ Days three and four: Arrays, Dictionaries, Sets and Enums. Sets are kind of new 
 
 ## Day Three: Coding on iPhone
 
-Day five is `if` statements, `switch` `cases` and ternary operators. Six is loops. [Checkpoint 3 is FizzBuzz](checkpoint-3.swift). I wrote it on the train in [Swifty Compiler](https://apps.apple.com/us/app/swifty-compiler/id1544749600), which is an iOS app that lets you write Swift on the phone, though the free version doesn't let you save, and you need an internet connection to compile. Paid version requires credits or something. Will try Swift Playgrounds on iPad before I jump to paid version. Quiz questions getting trickier with needing to watch for syntax errors and typos. Something is werid with the javascript on the quiz questions, I have to scroll before the onClick registers or something.
+Day five is `if` statements, `switch` `cases` and ternary operators. Six is loops. Quiz questions getting trickier with needing to watch for syntax errors and typos. Something is werid with the javascript on the quiz questions, I have to scroll before the onClick registers or something.
 
-Takeaways:
+- [Checkpoint 3](checkpoint-3.swift)  is FizzBuzz.
+- Tried [Swifty Compiler](https://apps.apple.com/us/app/swifty-compiler/id1544749600), an iOS app that lets you write Swift on iPhone.
+
+## Takeaways:
 - no `break` necessary in switches, use `fallthrough` to force it.
 - Swift requires all possible cases satisfied in a `switch`.
 - Ranges are three dots `...` (inclusive) or `..<` for exclusive (up to but excluding)
 - `for _` means you don't need an iterator variable, just do something the right number of times.
 - `names[1...]` means `name[1]` through `name[n]` where `n` is the last item in the array
-- Swifty Compiler on iPhone is a neat trick, but impractical to compile in cloud when on the subway.
+- Swifty Compiler on iPhone is a neat trick, but impractical for me. Free version doesn't let you save, and you need an internet connection to compile. Paid version requires credits or something. Will try Swift Playgrounds on iPad before I jump to paid version.
 
+# Day 4: TK
+
+Day 7 is functions, params and returns, 8 is default values, throwing functions.
+
+- Added [exercise-1.swift](exercise-1.swift) which compares two strings using functions. Jumped ahead to default parameters on this.
+- 
