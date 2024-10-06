@@ -46,7 +46,11 @@ Day five is `if` statements, `switch` `cases` and ternary operators. Six is loop
 
 # Day 4: TK
 
-Day 7 is functions, params and returns, 8 is default values, throwing functions.
+Day 7 is functions, params and returns, 8 is default values, throwing functions. Tests are getting sneaky. Feel good when I don't miss one. Tuples.
 
 - Added [exercise-1.swift](exercise-1.swift) which compares two strings using functions. Jumped ahead to default parameters on this.
 - 
+
+## Takeaways:
+- Functions can omit the `return` keyword if its a single expression
+- `if` statements can act like an expression. Wild.
