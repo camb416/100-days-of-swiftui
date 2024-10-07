@@ -36,7 +36,7 @@ Day five is `if` statements, `switch` `cases` and ternary operators. Six is loop
 - [Checkpoint 3](checkpoint-3.swift)  is FizzBuzz.
 - Tried [Swifty Compiler](https://apps.apple.com/us/app/swifty-compiler/id1544749600), an iOS app that lets you write Swift on iPhone.
 
-## Takeaways:
+### Takeaways:
 - no `break` necessary in switches, use `fallthrough` to force it.
 - Swift requires all possible cases satisfied in a `switch`.
 - Ranges are three dots `...` (inclusive) or `..<` for exclusive (up to but excluding)
@@ -44,13 +44,17 @@ Day five is `if` statements, `switch` `cases` and ternary operators. Six is loop
 - `names[1...]` means `name[1]` through `name[n]` where `n` is the last item in the array
 - Swifty Compiler on iPhone is a neat trick, but impractical for me. Free version doesn't let you save, and you need an internet connection to compile. Paid version requires credits or something. Will try Swift Playgrounds on iPad before I jump to paid version.
 
-# Day 4: TK
+## Day 4: Brain Hurting a Bit
 
-Day 7 is functions, params and returns, 8 is default values, throwing functions. Tests are getting sneaky. Feel good when I don't miss one. Tuples.
+Day 7 is functions, params and returns, 8 is default values, throwing functions. Tests are getting sneaky. Feel good when I don't miss one. Tuples, default params, returns, Do/Try/Catches and Errors. I'm keeping up but can tell there's a lot of expressiveness to the syntax that'll take some more practice to fully understand.
 
 - Added [exercise-1.swift](exercise-1.swift) which compares two strings using functions. Jumped ahead to default parameters on this.
-- 
+- Tuples took me a sec to understand the syntax, so I wrote some [Notes](dayFourNotes.md) for practice.
+- Did [Checkpoint 4](checkpoint-4.swift), where you determine square roots without using `sqrt`
 
-## Takeaways:
+### Takeaways:
 - Functions can omit the `return` keyword if its a single expression
+- `_` can be used to avoid naming a param or an Tuple elements.
 - `if` statements can act like an expression. Wild.
+- Try/Catches need `do` as well. Very Yoda.
+- Errors derive from Swift's `Error` type, and they act a lot like enums.
