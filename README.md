@@ -59,7 +59,7 @@ Day 7 is functions, params and returns, 8 is default values, throwing functions.
 - Try/Catches need `do` as well. Very Yoda.
 - Errors derive from Swift's `Error` type, and they act a lot like enums.
 
-## Days 9-10: Closures and Structs
+## Days 9-10: Lots of Rules
 
 Closures. There's a lot of alternate syntax that's possible. It's getting easier to write than understand at this point. Structs have methods, get/setters, and observers. I've started swearing at the tests. I'm not totally sure when `self` is required. Something to do with Closures.
 
