@@ -49,7 +49,7 @@ Day five is `if` statements, `switch` `cases` and ternary operators. Six is loop
 Day 7 is functions, params and returns, 8 is default values, throwing functions. Tests are getting sneaky. Feel good when I don't miss one. Tuples, default params, returns, Do/Try/Catches and Errors. I'm keeping up but can tell there's a lot of expressiveness to the syntax that'll take some more practice to fully understand.
 
 - Added [exercise-1.swift](exercise-1.swift) which compares two strings using functions. Jumped ahead to default parameters on this.
-- Tuples took me a sec to understand the syntax, so I wrote some [Notes](dayFourNotes.md) for practice.
+- Tuples took me a sec to understand the syntax, so I wrote some [Notes](notes-day08.md) for practice.
 - Did [Checkpoint 4](checkpoint-4.swift), where you determine square roots without using `sqrt`
 
 ### Takeaways:
@@ -64,8 +64,8 @@ Day 7 is functions, params and returns, 8 is default values, throwing functions.
 Closures. There's a lot of alternate syntax that's possible. It's getting easier to write than understand at this point. Structs have methods, get/setters, and observers. I've started swearing at the tests. I'm not totally sure when `self` is required. Something to do with Closures.
 
 - Added [checkpoint 5](checkpoint-5.swift) where you filter, sort and map an array of Ints using closures
-- Added [dayFiveNotes.swift](dayFiveNotes.swift) about Closures
-- Added [dayTenNotes.swift](dayTenNotes.swift) about Structs
+- Added [Day Nine Notes](notes-day09.swift) about Closures
+- Added [Day Ten Notes](notes-day10.swift) about Structs
 
 ### Takeaways:
 - `in` means closure
