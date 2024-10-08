@@ -61,9 +61,11 @@ Day 7 is functions, params and returns, 8 is default values, throwing functions.
 
 ## Days 9-10: Closures and Structs
 
-Closures. There's a lot of alternate syntax that's possible. It's getting easier to write than understand at this point.
+Closures. There's a lot of alternate syntax that's possible. It's getting easier to write than understand at this point. Structs have methods, get/setters, and observers. I've started swearing at the tests. I'm not totally sure when `self` is required. Something to do with Closures.
 
 - Added [checkpoint 5](checkpoint-5.swift) where you filter, sort and map an array of Ints using closures
+- Added [dayFiveNotes.swift](dayFiveNotes.swift) about Closures
+- Added [dayTenNotes.swift](dayTenNotes.swift) about Structs
 
 ### Takeaways:
 - `in` means closure
@@ -72,3 +74,11 @@ Closures. There's a lot of alternate syntax that's possible. It's getting easier
 - `$0` and `$1` represent the first/second params of a closure, and means you don't need to specify them in the parens at the start of it.
 - structs can have `let`s and `vars` and `func`s
 - struct methods can't change properties unless they're marked `mutating func`
+- `StructName.init()` is equivalent to `StructName()` when initializing a struct
+- if you assign struct vars in declaration, they act as defaults which can be overridden in initializer.
+- Tuples are always defined inline, can't have methods, structs save you typing.
+- Observers are mutating
+- default initializers are called "member-wise" initializers. They can be customized with `init(){}` in struct declaration.
+- use `self.` in custom initializers when param names are ambiguous.
+- All struct props need to be initialized before init finishes or other methods are called.
+- `struct`s can have `extension`s where new methods (and props I assume) can be added. Use this if you want to preserve memberwise initializer and override
