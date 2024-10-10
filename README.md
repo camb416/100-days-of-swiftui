@@ -94,3 +94,4 @@ There are a bunch more rules around syntax when it comes to whats public, privat
 - if you edit private stuff, you need `mutable`
 - if you have private stuff you might need to make a custom intitializer method with `init()`
 - you can add control blocks with `didSet` and `willSet` on variables that creates watcher methods. That's cool.
+- Swift's compiler kind of tells you whats wrong with your code when you make mistakes.
