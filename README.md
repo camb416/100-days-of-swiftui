@@ -82,3 +82,15 @@ Closures. There's a lot of alternate syntax that's possible. It's getting easier
 - use `self.` in custom initializers when param names are ambiguous.
 - All struct props need to be initialized before init finishes or other methods are called.
 - `struct`s can have `extension`s where new methods (and props I assume) can be added. Use this if you want to preserve memberwise initializer and override
+
+## Day 11: Public-Private Partnership
+
+There are a bunch more rules around syntax when it comes to whats public, private and static in Structs.
+
+- Added [Checkpoint 6](checkpoint-6.swift) where you make a Car struct with changeable gears.
+
+### Takeaways:
+- static stuff is on Struct, non-static (assumed) is on instance.
+- if you edit private stuff, you need `mutable`
+- if you have private stuff you might need to make a custom intitializer method with `init()`
+- you can add control blocks with `didSet` and `willSet` on variables that creates watcher methods. That's cool.
