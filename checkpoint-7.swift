@@ -11,3 +11,81 @@ import Foundation
 /// - Make Persian and Lion as subclasses of Cat.
 ///
 ////////////////
+
+class Animal {
+    var nLegs: Int
+    var isTame: Bool
+
+    init(numberOfLegs: Int, isTame: Bool = true){
+        nLegs = numberOfLegs
+        self.isTame = isTame
+    }
+
+    func speak() {
+        print("I am a \(nLegs)-legged animal")
+    }
+}
+
+class Dog: Animal {
+    init(){
+        super.init(numberOfLegs:4)
+    }
+    override func speak() {
+        print("woof")
+    }
+}
+
+class Cat: Animal {
+    init(isTame:Bool = true){
+        super.init(numberOfLegs:4, isTame:isTame)
+    }
+    override func speak() {
+        print("meow")
+    }
+}
+
+class Corgi: Dog {
+    override func speak() {
+        print("worf")
+    }
+}
+
+class Poodle: Dog {
+    override func speak() {
+        print("woofie")
+    }
+}
+
+class Persian: Cat {
+    override func speak() {
+        print("meowza")
+    }
+}
+
+class Lion: Cat {
+    init(){
+        super.init(isTame: false)
+    }
+    override func speak(){
+        print("ROAR")
+    }
+}
+// Animal
+let shrek = Animal(numberOfLegs: 2)
+shrek.speak()
+
+// Dogs
+let fido = Dog()
+fido.speak()
+let corgi = Corgi()
+corgi.speak()
+let poodle = Poodle()
+poodle.speak()
+
+// Cats
+let cat = Cat()
+cat.speak()
+let persian = Persian()
+persian.speak()
+let leo = Lion()
+leo.speak();

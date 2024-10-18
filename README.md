@@ -49,7 +49,7 @@ Day five is `if` statements, `switch` `cases` and ternary operators. Six is loop
 Day 7 is functions, params and returns, 8 is default values, throwing functions. Tests are getting sneaky. Feel good when I don't miss one. Tuples, default params, returns, Do/Try/Catches and Errors. I'm keeping up but can tell there's a lot of expressiveness to the syntax that'll take some more practice to fully understand.
 
 - Added [exercise-1.swift](exercise-1.swift) which compares two strings using functions. Jumped ahead to default parameters on this.
-- Tuples took me a sec to understand the syntax, so I wrote some [Notes](notes-day08.md) for practice.
+- Tuples took me a sec to understand the syntax, so I wrote some [Notes](notes-day08.swift) for practice.
 - Did [Checkpoint 4](checkpoint-4.swift), where you determine square roots without using `sqrt`
 
 ### Takeaways:
@@ -95,3 +95,13 @@ There are a bunch more rules around syntax when it comes to whats public, privat
 - if you have private stuff you might need to make a custom intitializer method with `init()`
 - you can add control blocks with `didSet` and `willSet` on variables that creates watcher methods. That's cool.
 - Swift's compiler kind of tells you whats wrong with your code when you make mistakes.
+
+## Day 12: Classes
+
+There are lots of default behaviors if you need empty constructors for example... if theres no param or return, leave it out. `init`s and `deinit`s are pretty chill. Overriding `init`s, when to call super is a little funny, but the compiler errors are very descriptive. Checkpoint seemed easy, but maybe that's because OOP is burned in my brain.
+
+- Added [Checkpoint 7](checkpoint-7.swift), where you make Animal classes and subclasses
+
+### Takeaways:
+- Classes are very straightforward, but the subtleties between structs, mutability and const can be tricky
+
