@@ -105,3 +105,12 @@ There are lots of default behaviors if you need empty constructors for example..
 ### Takeaways:
 - Classes are very straightforward, but the subtleties between structs, mutability and const can be tricky
 
+## Day 13: Protocols and Extensions
+
+This stuff is like inheritence for structs and types. POP (protocol oriented programming) says you should make protocols and extend the default implementations, then your types are less verbose... or something
+
+- Added [Checkpoint 8](checkpoint-8.swift).
+
+### Takeaways:
+
+- POP is fun, though inheretance of `init` is still a little mysterious
