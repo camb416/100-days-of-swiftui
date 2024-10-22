@@ -114,3 +114,13 @@ This stuff is like inheritence for structs and types. POP (protocol oriented pro
 ### Takeaways:
 
 - POP is fun, though inheretance of `init` is still a little mysterious
+
+## Day 14: Let it be
+
+`if let` and `guard let` are funny combos that allow optionals to get checked for. Optionals allow for `nil` which seems like it would save 50-60% of the code I've written in my life.
+
+- Added [Checkpoint 9](checkpoint-9.swift), where you write a one-liner function with some optionals
+
+### Takeaways:
+- `nil`s are their own thing, they won't pop up if you're strongly typed, unlike in JS.
+- the syntax of all these `guard`s and `??` and `?` will take a little practice to weild with intention.
