@@ -1,5 +1,5 @@
-# 100 Days of SwiftUI
-
+[< back](../README.md)
+# Section 1: Introduction to Swift
 I've started doing [Paul Hudson](https://x.com/twostraws)'s [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui). I'd like to improve my RealityKit and Unity/Native iOS interoperability skills to make high-fidelity 3D experiences that live and feel like first-class citizens in the Apple ecosystem.
 
 ## Days 1-2: Avoiding Xcode
@@ -124,3 +124,27 @@ This stuff is like inheritence for structs and types. POP (protocol oriented pro
 ### Takeaways:
 - `nil`s are their own thing, they won't pop up if you're strongly typed, unlike in JS.
 - the syntax of all these `guard`s and `??` and `?` will take a little practice to weild with intention.
+
+## Day 15
+
+### My Self Eval:
+
+#### High Confidence
+Nothing much new with these
+- Basic Types
+- Control Flow
+- Structs and OOP
+
+#### Medium Confidence
+
+Have to think, but no problem reading
+- Arrays/Sets/Dictionaries
+- Optionals and Unwrapping
+
+#### Low Confidence
+
+Some of the short forms are tripping me up or have new rules that I've not committed to memory.
+
+- Closures
+- Protocols
+- Try/Catches
