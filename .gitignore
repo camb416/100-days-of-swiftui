@@ -1,1 +1,6 @@
+# Mac cruft
 .DS_Store
+
+
+# Xcode cruft
+xcuserdata/

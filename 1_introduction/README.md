@@ -1,5 +1,5 @@
 [< back](../README.md)
-# Section 1: Introduction to Swift
+# Introduction to Swift
 I've started doing [Paul Hudson](https://x.com/twostraws)'s [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui). I'd like to improve my RealityKit and Unity/Native iOS interoperability skills to make high-fidelity 3D experiences that live and feel like first-class citizens in the Apple ecosystem.
 
 ## Days 1-2: Avoiding Xcode
