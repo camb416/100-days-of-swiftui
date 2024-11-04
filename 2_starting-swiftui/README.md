@@ -1,5 +1,5 @@
 [< back](../README.md)
-# Starting SwiftUI
+# Starting SwiftUI: WeSplit
 
 ## Day 16
 
@@ -13,3 +13,6 @@ The `$` preceding a variable name indicates *two way binding* (variable can be r
 
 ## Day 17
 
+Oh these app examples are fun. Added an emoji to the title, headers on all sections, and googled how to change the font of a text field with `.font(.largeTitle)`. The declarative aspect of the data and the UI is something I want printed on a t-shirt.
+
+![We Split Screenshot](wesplit.jpg)
