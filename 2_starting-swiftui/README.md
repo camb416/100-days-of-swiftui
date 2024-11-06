@@ -25,3 +25,8 @@ Made a temperature converter. Some observations are that
 3. `ForEach` requires a const range.
 
 ![Temp Convert Screenshot](tempConvert.jpg)
+
+# Day 20
+
+Stacks. VStack has alignments of leading and trailing, rather than left/right.
+
