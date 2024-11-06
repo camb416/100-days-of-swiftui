@@ -11,8 +11,17 @@ The `$` preceding a variable name indicates *two way binding* (variable can be r
 
 `ForEach(0..<100){` lets you create views with a loop. It passes a closure and the syntax hurts my head just a little.
 
-## Day 17
+## Days 17-18
 
 Oh these app examples are fun. Added an emoji to the title, headers on all sections, and googled how to change the font of a text field with `.font(.largeTitle)`. The declarative aspect of the data and the UI is something I want printed on a t-shirt.
 
 ![We Split Screenshot](wesplit.jpg)
+
+## Day 19
+
+Made a temperature converter. Some observations are that
+1. it's challenging to make data in the right formats to go into the SwiftUI code
+2. @State watchers require an `.onChange` method instead of using `didSet`
+3. `ForEach` requires a const range.
+
+![Temp Convert Screenshot](tempConvert.jpg)
