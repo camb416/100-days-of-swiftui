@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @State private var showingAlert = false
     @State private var showingSecondAlert = false
-    
+
     var body: some View {
         Button("Show Alert"){
             showingAlert = true
@@ -19,7 +19,7 @@ struct ContentView: View {
         .alert("Important message", isPresented: $showingAlert){
             Button("OK"){} // any button in an alert dismisses the alert, no action necessary
         }
-        
+
         Button("Show Another Alert"){
             showingSecondAlert = true
         }
@@ -30,7 +30,7 @@ struct ContentView: View {
             Text("Please 🤩 read this.")
         }
     }
-    
+
 }
 
 #Preview {

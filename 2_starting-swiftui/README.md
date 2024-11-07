@@ -28,5 +28,16 @@ Made a temperature converter. Some observations are that
 
 # Day 20
 
-Stacks. VStack has alignments of leading and trailing, rather than left/right.
+Stacks. VStack has alignments of leading and trailing, rather than left/right. Adding `Spacer()` is both intuitive and confusing. The number of them you have determines each ones size, so they're like squishy.
 
+Colors, frames and gradients. See [ColorAndGradientsView.swift](GuessTheFlag/GuessTheFlag/ColorAndGradientsView.swift)
+
+![Gradients screenshot](gradients.jpg)
+
+Buttons! see [ButtonsView.swift](GuessTheFlag/GuessTheFlag/ButtonsView.swift)
+
+![Buttons screenshot](buttons.jpg)
+
+Alert! Alert! See [AlertsView.swift](GuessTheFlag/GuessTheFlag/AlertsView.swift)
+
+![Alerts screenshot](alerts.jpg)
