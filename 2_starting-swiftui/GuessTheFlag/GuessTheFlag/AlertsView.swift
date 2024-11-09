@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AlertsView: View {
 
     @State private var showingAlert = false
     @State private var showingSecondAlert = false
