@@ -18,21 +18,24 @@ struct ContentView: View {
     
     var body: some View{
         ZStack{
-            Color.blue
-                .ignoresSafeArea()
+            // LinearGradient(colors: [.blue, .black], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            RadialGradient(stops: [
+                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
+                .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3),
+            ], center: .top, startRadius: 200, endRadius: 400)
+            .ignoresSafeArea()
             VStack{
                 
-                
-                VStack(spacing: 30){
-                    Text("Tap the flag of")
-                    Text(countries[correctAnswer])
+                VStack(spacing: 15){
+                    Text("Tap the flag of").font(.subheadline.weight(.heavy))
+                    Text(countries[correctAnswer]).font(.largeTitle.weight(.semibold))
                 }
                 ForEach(0..<3) { number in
                     Button {
                         flagTapped(number)
                         
                     } label: {
-                        Image(countries[number])
+                        Image(countries[number]).clipShape(.capsule).shadow(radius:5)
                     }
                 }
             }
