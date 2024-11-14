@@ -16,6 +16,10 @@ struct ContentView: View {
     @State var showingScore = false
     @State private var scoreTitle = ""
     
+    @State private var currentScore = 0
+    @State private var currentTries = 0
+    let maxTries = 2 // TODO: this should be 9 (8 questions total)
+    
     var body: some View{
         ZStack{
             // LinearGradient(colors: [.blue, .black], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
@@ -47,7 +51,7 @@ struct ContentView: View {
                         flagTapped(number)
                         
                     } label: {
-                        Image(countries[number]).clipShape(.capsule).shadow(radius:5)
+                        Image(countries[number]).clipShape(.rect(cornerRadius: 5)).shadow(radius:5)
                     }
                 }
             }
@@ -58,9 +62,10 @@ struct ContentView: View {
                 .clipShape(.rect(cornerRadius: 20))
                 Spacer()
                 Spacer()
-                Text("Score: ???")
+                Text("Tries: \(currentTries) \nScore: \(currentScore)")
                     .foregroundStyle(.white)
                     .font(.title.bold())
+                    .multilineTextAlignment(.center)
                 Spacer()
                 Spacer()
             }
@@ -71,21 +76,37 @@ struct ContentView: View {
         }.alert(scoreTitle, isPresented: $showingScore){
             Button("Continue", action: askQuestion)
         } message: {
-            Text("Your score is ???")
+            Text("Your score is \(currentScore)")
         }
     }
     func flagTapped(_ number: Int){
+        currentTries += 1
+        if(currentTries>maxTries){
+            // reset the game
+            resetGame()
+            return
+        }
         if number == correctAnswer{
+            currentScore += 1
+
             scoreTitle = "Corrent"
         } else {
             scoreTitle = "Wrong."
+            // TODO: display the correct answer here
+            
         }
         showingScore = true
     }
+    
     func askQuestion(){
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         
+    }
+    func resetGame(){
+        currentTries = 0
+        currentScore = 0
+        // TODO: display an end game alert here.
     }
     
     
